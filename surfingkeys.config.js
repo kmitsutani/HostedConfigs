@@ -131,11 +131,20 @@ api.unmap(';ap');
 // ------------------------------------------------------------
 // Misc
 // Markdown形式でサイトリンクコピー
-api.mapkey('ymd', "Copy current page's link with markdown", function() {
+api.mapkey('ymd', "Copy current page's link in markdown format", function() {
   const url = new URL(window.location.href);
   var title = window.document.title.replace(/(<|>)/g, '\\$1')
   api.Clipboard.write(`[${title}](${url.href})`);
 });
+
+// Scrapbox形式でサイトリンクコピー
+api.mapkey('scy', "Copy current page's link in scrapbox format", function() {
+  const url = new URL(window.location.href);
+  var title = window.document.title.replace(/(<|>)/g, '\\$1')
+  api.Clipboard.write(`[${title} ${url.href}]`);
+});
+
+
 // hatenabookamark
 api.mapkey(';hb', "Hatena bookmark", function(){
     var d = (new Date);
