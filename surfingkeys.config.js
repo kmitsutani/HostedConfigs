@@ -18,7 +18,6 @@ api.map('F', 'gf')
 
 // app/site specific settings
 // Gmail
-// gmail
 api.unmap('j', /mail.google.com/) // next mail
 api.unmap('k', /mail.google.com/) // prev mail
 api.unmap('s', /mail.google.com/) // add star
@@ -27,6 +26,11 @@ api.unmap('i', /mail.google.com/) // inbox
 api.unmap('e', /mail.google.com/) // archive
 api.unmap('a', /mail.google.com/) // select all
 api.unmap('*', /mail.google.com/) // select all (* + a)
+
+// Google Colaboratory and Jupyter notebook
+api.unmapAllExcept([], /colab.research.google.com/);
+api.unmapAllExcept([], /notebooks/ipnyb//);
+
 
 // Netflix
 api.unmap('f', /netflix.com/) // fullscreen
