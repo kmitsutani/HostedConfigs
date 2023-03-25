@@ -29,7 +29,7 @@ api.unmap('*', /mail.google.com/) // select all (* + a)
 
 // Google Colaboratory and Jupyter notebook
 api.unmapAllExcept([], /colab.research.google.com/);
-api.unmapAllExcept([], /notebooks/ipnyb//);
+api.unmapAllExcept([], /notebooks\/ipnyb//);
 
 
 // Netflix
