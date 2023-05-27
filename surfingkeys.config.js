@@ -28,9 +28,7 @@ api.unmap('a', /mail.google.com/) // select all
 api.unmap('*', /mail.google.com/) // select all (* + a)
 
 // Google Colaboratory and Jupyter notebook
-api.unmapAllExcept([], /colab.research.google.com/);
-api.unmapAllExcept([], /notebooks\/ipnyb/);
-api.unmapAllExcept([], /docs.google.com/);
+settings.blacklistPattern = /docs.google.com|notebookes\/ipynb|colab.research.google.com/i;
 
 // Netflix
 api.unmap('f', /netflix.com/) // fullscreen
