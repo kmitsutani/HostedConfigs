@@ -153,10 +153,7 @@ api.mapkey('scy', "Copy current page's link in scrapbox format", function() {
 api.mapkey(';hb', "Hatena bookmark", function(){
     var d = (new Date);
     var s = document.createElement('script');
-    var ymd = d.getFullYear()+d.getMonth()+d.getDate();
-    s.charset='UTF-8';
-    s.src='https://b.hatena.ne.jp/js/Hatena/Bookmark/let.js?'+ ymd;
-    (document.getElementsByTagName('head')[0] || document.body).appendChild(s);
+    window.location.href = "https://b.hatena.ne.jp/entry/" + window.location.href;
 });
 
 // right click
