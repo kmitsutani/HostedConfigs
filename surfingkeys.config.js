@@ -2,7 +2,7 @@
 // Properties list
 // hit-a-hint
 // hjklはヒントキー表示中の移動になったので使用できない 他に割り当ててキーを押すとhit-a-hintキャンセルに
-// api.Hints.setCharacters("asdfwerxcvuionm");
+api.Hints.setCharacters("asdfwerxcvuionm");
 settings.hintAlign = "left";
 // tab: Always select Tabs ('T') by omni bar
 settings.tabsThreshold = 0;
