@@ -28,7 +28,7 @@ api.unmap("a", /mail.google.com/); // select all
 api.unmap("*", /mail.google.com/); // select all (* + a)
 
 // Google Colaboratory and Jupyter notebook
-settings.blacklistPattern =
+settings.blocklistPattern =
   /docs.google.com|notebookes\/ipynb|colab.research.google.com/i;
 
 // Netflix
